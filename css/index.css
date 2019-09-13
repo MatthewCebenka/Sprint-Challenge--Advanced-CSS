@@ -1,6 +1,3 @@
-html {
-  font-size: 62.5%;
-}
 .btn {
   border: 1px solid black;
   text-align: center;
@@ -10,6 +7,11 @@ html {
   padding: 10px 10px;
   border-radius: 12px;
   width: 40%;
+}
+@media (max-width: 500px) {
+  .btn {
+    width: 200%;
+  }
 }
 .btn:hover {
   background-color: aliceblue;
@@ -195,9 +197,19 @@ p {
 .title-container .title h1 {
   font-size: 3rem;
 }
+@media (max-width: 500px) {
+  .title-container .title h1 {
+    font-size: 4rem;
+  }
+}
 .nav-container {
   width: 50%;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .nav-container {
+    width: 90%;
+  }
 }
 .nav-container .nav {
   display: flex;
@@ -209,11 +221,8 @@ p {
   font-size: 1.5rem;
 }
 @media (max-width: 500px) {
-  .title h1 {
-    font-size: 4rem;
-  }
-  .nav a {
-    font-size: 2rem;
+  .nav-container .nav a {
+    font-size: 1.5rem;
   }
 }
 footer {
@@ -237,6 +246,17 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 100%;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
@@ -259,20 +279,20 @@ footer {
   display: flex;
   justify-content: center;
 }
-.home .walk .walk-text {
+.home .walk-text {
   width: 50%;
 }
-.home .walk .walk-text h3 {
+.home .walk-text h3 {
   margin-bottom: 10px;
 }
-.home .walk .walk-text p {
+.home .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-img {
+.home .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-img img {
+.home img {
   width: 100%;
   height: auto;
   border-radius: 10px;
