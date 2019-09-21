@@ -1,1 +1,51 @@
 // Navigation code here
+
+.top-section{
+    background-color: #f6f6f6;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+.title-container{
+    width: 100%;
+    margin: 0 auto;
+
+    .title{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .title h1{
+        font-size: 3rem;
+
+        @media (max-width: 500px){
+            font-size: 4rem;
+        }
+    }
+}
+
+.nav-container{
+    width: 50%;
+    margin: 0 auto;
+
+    @media (max-width: 500px){
+        width: 90%;
+    }
+
+    .nav{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .nav a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.5rem;
+
+        @media (max-width: 500px){
+            font-size: 1.5rem;
+        }
+    }
+}

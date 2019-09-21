@@ -1,1 +1,22 @@
 // Mixins Here
+
+.btn{
+    border: 1px solid black;
+    text-align: center;
+    background-color: #22283a;
+    color: white;
+    font-size: 2rem;
+    // .btn-color-font-size(#008080, white, 2rem)
+    padding: 10px 10px;
+    border-radius: 12px;
+    width: 40%;
+
+    @media (max-width: 500px){
+        width: 200%;
+    }
+}
+
+.btn:hover{
+    background-color: aliceblue;
+    color: black;
+}
